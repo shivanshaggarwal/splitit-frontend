@@ -2,7 +2,7 @@ import axios from 'axios';
 
 console.log('Base url-', process.env.REACT_APP_API_BASE);
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API_BASE||'http://localhost:5000/api',
+    baseURL: process.env.REACT_APP_API_BASE||'https://splitit-backend-i09x.onrender.com',
     withCredentials: false
 })
 api.interceptors.request.use((config)=>{
